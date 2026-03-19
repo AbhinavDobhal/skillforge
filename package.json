@@ -1,5 +1,5 @@
 {
-  "name": "@abhinavdobhal/skillforge",
+  "name": "skillforge",
   "version": "0.1.0",
   "description": "AI toolkit scaffolder for agents, skills, and workflows across Claude, Cursor, Windsurf, Antigravity, Copilot, Kiro, and Codex",
   "license": "MIT",
