@@ -1,4 +1,4 @@
-# Skillforge Scripts
+# Aiskillforge Scripts
 
 This folder is reserved for future validation and automation helpers.
 

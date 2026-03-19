@@ -1,7 +1,7 @@
 {
   "mcpServers": {
-    "skillforge": {
-      "description": "Skillforge agents, skills, and workflows integration",
+    "aiskillforge": {
+      "description": "Aiskillforge agents, skills, and workflows integration",
       "enabled": true
     }
   },

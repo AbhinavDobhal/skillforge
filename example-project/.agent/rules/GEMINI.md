@@ -4,7 +4,7 @@ description: Global rules and behavioral guidelines for the AI agent
 
 # Global AI Agent Rules
 
-This file contains system-wide behavioral guidelines and rules for Skillforge agents.
+This file contains system-wide behavioral guidelines and rules for Aiskillforge agents.
 
 ## Core Principles
 

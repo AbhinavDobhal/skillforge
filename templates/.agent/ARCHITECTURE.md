@@ -1,4 +1,4 @@
-# Skillforge Architecture
+# Aiskillforge Architecture
 
 > Comprehensive AI Agent Capability Expansion Toolkit for Modern Development
 
@@ -6,7 +6,7 @@
 
 ## 📋 Overview
 
-Skillforge is a modular system consisting of:
+Aiskillforge is a modular system consisting of:
 
 - **7 Specialist Agents** — Role-based AI personas
 - **22 Skills** — Domain-specific knowledge modules
@@ -180,7 +180,7 @@ Defines MCP (Model Context Protocol) servers that integrate external tools and d
 ```json
 {
   "mcpServers": {
-    "skillforge": {
+    "aiskillforge": {
       "command": "...",
       "args": [...]
     }
@@ -190,9 +190,9 @@ Defines MCP (Model Context Protocol) servers that integrate external tools and d
 
 ### IDE-Specific Configs
 Each AI IDE has its own configuration file:
-- **Claude** → `.claude/skillforge.md`
-- **Cursor** → `.cursor/rules/skillforge.md`
-- **Windsurf** → `.windsurf/skillforge.md`
+- **Claude** → `.claude/aiskillforge.md`
+- **Cursor** → `.cursor/rules/aiskillforge.md`
+- **Windsurf** → `.windsurf/aiskillforge.md`
 - **GitHub Copilot** → `.github/copilot-instructions.md`
 - **Kiro** → `kiro.config.json`
 - **Codex** → `codex.config.md`
@@ -228,6 +228,6 @@ Each AI IDE has its own configuration file:
 
 ## 🛠️ Version
 
-- **Skillforge**: v0.1.0
+- **Aiskillforge**: v0.1.0
 - **Shipped Template Set**: 7 agents, 22 skills, 16 workflows, 5 templates
 - **Last Updated**: 2026-03-19

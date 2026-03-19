@@ -1,40 +1,40 @@
-# Skillforge
+# Aiskillforge
 
 Forge better code with AI skills.
 
-Skillforge is an npm package that scaffolds a complete `.agent` toolkit for AI-assisted development across major IDEs.
+Aiskillforge is an npm package that scaffolds a complete `.agent` toolkit for AI-assisted development across major IDEs.
 
 ## Install
 
 ```bash
-npm install -g skillforge
+npm install -g aiskillforge
 ```
 
 Or run directly with npx:
 
 ```bash
-npx skillforge init --ai claude
+npx aiskillforge init --ai claude
 ```
 
 ## Usage
 
 ```bash
-skillforge init --ai claude
-skillforge init --ai cursor
-skillforge init --ai windsurf
-skillforge init --ai antigravity
-skillforge init --ai copilot
-skillforge init --ai kiro
-skillforge init --ai codex
+aiskillforge init --ai claude
+aiskillforge init --ai cursor
+aiskillforge init --ai windsurf
+aiskillforge init --ai antigravity
+aiskillforge init --ai copilot
+aiskillforge init --ai kiro
+aiskillforge init --ai codex
 ```
 
 ## How to Use
 
 1. Open your project folder in terminal.
-2. Initialize Skillforge for your AI IDE:
+2. Initialize Aiskillforge for your AI IDE:
 
 ```bash
-skillforge init --ai claude
+aiskillforge init --ai claude
 ```
 
 3. Open the same project in your IDE.
