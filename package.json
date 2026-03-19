@@ -1,6 +1,6 @@
 {
   "name": "skillforge",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "AI toolkit scaffolder for agents, skills, and workflows across Claude, Cursor, Windsurf, Antigravity, Copilot, Kiro, and Codex",
   "license": "MIT",
   "author": "Abhinav Dobhal",
