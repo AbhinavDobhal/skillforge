@@ -14,6 +14,7 @@
     "README.md",
     "CHANGELOG.md",
     "GETTING_STARTED.md",
+    "QUICKSTART.sh",
     "LICENSE"
   ],
   "scripts": {
