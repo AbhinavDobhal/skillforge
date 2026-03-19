@@ -15,6 +15,7 @@
     "CHANGELOG.md",
     "GETTING_STARTED.md",
     "QUICKSTART.sh",
+    "verify.js",
     "LICENSE"
   ],
   "scripts": {
