@@ -13,6 +13,7 @@
     "templates",
     "README.md",
     "CHANGELOG.md",
+    "GETTING_STARTED.md",
     "LICENSE"
   ],
   "scripts": {
