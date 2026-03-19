@@ -1,27 +1,5 @@
 node_modules/
-dist/
-build/
-*.log
+*.tgz
 .DS_Store
-.env
-.env.local
-.env.*.local
-coverage/
-.nyc_output/
-.cache/
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Package lock files (optional per project preference)
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
+example-project
+abhinavdobhal-skillforge-0.1.0.tgz

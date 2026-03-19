@@ -1,8 +1,5 @@
 #!/usr/bin/env node
 
-import { main } from '../lib/cli.js';
+const { run } = require("../lib/cli");
 
-main().catch((err) => {
-  console.error('Error:', err.message);
-  process.exit(1);
-});
+run(process.argv.slice(2));
