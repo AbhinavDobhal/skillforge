@@ -6,6 +6,8 @@ Aiskillforge is an npm package that scaffolds a complete `.agent` toolkit for AI
 
 ## Install
 
+NPM package: https://www.npmjs.com/package/aiskillforge
+
 ```bash
 npm install -g aiskillforge
 ```
@@ -106,6 +108,14 @@ The command creates:
 - CLI source in `bin/` and `lib/`
 - Reusable scaffold templates in `templates/.agent/`
 - Starter example in `example-project/`
+
+## Why It Is Useful In Development
+
+- Creates a consistent AI workflow across teams and IDEs
+- Reduces prompt drift by using reusable agents, skills, and slash-command workflows
+- Speeds up feature delivery with a spec -> clarify -> plan -> tasks -> implement flow
+- Improves quality with built-in debugging, testing, review, and checklist workflows
+- Works as project scaffolding so every new repo starts with the same AI operating model
 
 ## License
 
