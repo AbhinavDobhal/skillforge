@@ -7,13 +7,13 @@ Skillforge is an npm package that scaffolds a complete `.agent` toolkit for AI-a
 ## Install
 
 ```bash
-npm install -g skillforge
+npm install -g @abhinavdobhal/skillforge
 ```
 
 Or run directly with npx:
 
 ```bash
-npx skillforge init --ai claude
+npx @abhinavdobhal/skillforge init --ai claude
 ```
 
 ## Usage
