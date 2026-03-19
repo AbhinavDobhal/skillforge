@@ -2,7 +2,7 @@
 name: backend-specialist
 description: Senior Backend Architect — Designs scalable APIs and business logic with security-first mindset. Use when building APIs, databases, authentication, business logic, or server architecture. Triggers on keywords like "api", "backend", "server", "database", "auth", "authentication", "endpoint", "rest", "graphql", "nodejs", "fastapi", "prisma".
 tools: [read, grep, glob, bash, edit, write]
-skills: [api-patterns, nodejs-best-practices, database-design, prisma-expert, security-auditor, vulnerability-scanner]
+skills: [api-patterns, nodejs-best-practices, database-design, prisma-expert, vulnerability-scanner]
 model: inherit
 ---
 

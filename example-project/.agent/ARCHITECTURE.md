@@ -8,9 +8,9 @@
 
 Skillforge is a modular system consisting of:
 
-- **20+ Specialist Agents** — Role-based AI personas
-- **25+ Skills** — Domain-specific knowledge modules
-- **8+ Workflows** — Slash command procedures
+- **7 Specialist Agents** — Role-based AI personas
+- **22 Skills** — Domain-specific knowledge modules
+- **8 Workflows** — Slash command procedures
 - **Multi-IDE Support** — Claude, Cursor, Windsurf, Antigravity, GitHub Copilot, Kiro, Codex
 
 ---
@@ -21,16 +21,16 @@ Skillforge is a modular system consisting of:
 .agent/
 ├── ARCHITECTURE.md          # This file
 ├── mcp_config.json          # MCP server configurations
-├── agents/                  # Specialist Agents (20+)
-├── skills/                  # Domain Skills (25+)
-├── workflows/               # Slash Commands (8+)
+├── agents/                  # Specialist Agents (7)
+├── skills/                  # Domain Skills (22)
+├── workflows/               # Slash Commands (8)
 ├── rules/                   # Global Rules
 └── scripts/                 # Validation Scripts
 ```
 
 ---
 
-## 🤖 Agents (20+)
+## 🤖 Agents (7)
 
 Specialist AI personas for different domains. Agents are **auto-invoked** based on task context.
 
@@ -42,24 +42,11 @@ Specialist AI personas for different domains. Agents are **auto-invoked** based 
 | `debugger` | Root cause analysis | systematic-debugging |
 | `security-auditor` | Security compliance | vulnerability-scanner, red-team-tactics |
 | `test-engineer` | Testing strategies | testing-patterns, tdd-workflow, webapp-testing |
-| `performance-optimizer` | Speed, Web Vitals | performance-profiling |
 | `project-planner` | Discovery, planning | brainstorming, plan-writing, architecture |
-| `devops-engineer` | CI/CD, Docker | deployment-procedures, docker-expert |
-| `mobile-developer` | iOS, Android, RN | mobile-design |
-| `game-developer` | Game logic | game-development |
-| `seo-specialist` | Ranking, visibility | seo-fundamentals, geo-fundamentals |
-| `documentation-writer` | Manuals, docs | documentation-templates |
-| `product-manager` | Requirements, stories | plan-writing, brainstorming |
-| `penetration-tester` | Offensive security | red-team-tactics |
-| `qa-automation-engineer` | E2E testing | webapp-testing, testing-patterns |
-| `code-archaeologist` | Legacy code, refactoring | clean-code, code-review-checklist |
-| `explorer-agent` | Codebase analysis | — |
-| `orchestrator` | Multi-agent coordination | parallel-agents, behavioral-modes |
-| `product-owner` | Strategy, backlog | plan-writing, brainstorming |
 
 ---
 
-## 🧩 Skills (25+)
+## 🧩 Skills (22)
 
 Modular knowledge domains that agents load on-demand based on task context.
 
@@ -73,7 +60,6 @@ Modular knowledge domains that agents load on-demand based on task context.
 ### Backend & API
 - `api-patterns` — REST, GraphQL, tRPC
 - `nodejs-best-practices` — Node.js async, modules, patterns
-- `python-patterns` — Python standards, FastAPI
 
 ### Database
 - `database-design` — Schema design, optimization
@@ -97,27 +83,15 @@ Modular knowledge domains that agents load on-demand based on task context.
 - `app-builder` — Full-stack app scaffolding
 
 ### Mobile & Games
-- `mobile-design` — Mobile UI/UX patterns
-- `game-development` — Game logic, mechanics
+- No dedicated mobile or game skills shipped in the current template set
 
 ### Infrastructure & DevOps
-- `deployment-procedures` — CI/CD, deploy workflows
-- `docker-expert` — Containerization, Docker Compose
-- `server-management` — Infrastructure management
+- Deployment is covered by workflow guidance, but no dedicated infrastructure skill is shipped in the current template set
 
 ### Other
-- `clean-code` — Global coding standards
 - `systematic-debugging` — Troubleshooting methodology
 - `performance-profiling` — Web Vitals, optimization
-- `i18n-localization` — Internationalization
-- `mcp-builder` — Model Context Protocol
-- `documentation-templates` — Doc formats
-- `behavioral-modes` — Agent personas
-- `parallel-agents` — Multi-agent patterns
-- `geo-fundamentals` — GenAI optimization
-- `seo-fundamentals` — SEO, E-E-A-T, Core Web Vitals
-- `bash-linux` — Linux commands, scripting
-- `powershell-windows` — Windows PowerShell
+- The current template set intentionally focuses on frontend, backend, planning, testing, debugging, and security foundations
 
 ### Skill Structure
 ```
@@ -130,20 +104,20 @@ skill-name/
 
 ---
 
-## 🔄 Workflows (8+)
+## 🔄 Workflows (8)
 
 Slash command procedures for common development tasks.
 
 | Command | Description | Primary Agents |
 |---------|-------------|---|
-| `/brainstorm` | Explore options before implementation | project-planner, orchestrator |
+| `/brainstorm` | Explore options before implementation | project-planner |
 | `/create` | Create new features or apps | frontend-specialist, backend-specialist |
-| `/debug` | Systematic debugging and root cause analysis | debugger, code-archaeologist |
-| `/deploy` | Deploy application to production | devops-engineer, security-auditor |
-| `/enhance` | Improve existing code | frontend-specialist, backend-specialist, performance-optimizer |
-| `/plan` | Create task breakdown and planning | project-planner, orchestrator |
-| `/test` | Generate and run tests | test-engineer, qa-automation-engineer |
-| `/ui-ux-pro-max` | Design with 50+ styles and patterns | frontend-specialist, design-specialist |
+| `/debug` | Systematic debugging and root cause analysis | debugger |
+| `/deploy` | Deploy application to production | backend-specialist, security-auditor |
+| `/enhance` | Improve existing code | frontend-specialist, backend-specialist, debugger |
+| `/plan` | Create task breakdown and planning | project-planner |
+| `/test` | Generate and run tests | test-engineer |
+| `/ui-ux-pro-max` | Design with 50+ styles and patterns | frontend-specialist |
 
 ---
 
@@ -169,7 +143,7 @@ User Request → Skill Detection → Load Skills
 
 1. **AI analyzes request** → detects "React", "performance", "optimize"
 2. **Skills loaded**: react-best-practices, performance-profiling
-3. **Agent selected**: @frontend-specialist + @performance-optimizer
+3. **Agent selected**: @frontend-specialist + @debugger
 4. **Response**: Specialist advice with code examples from skills
 
 ---
@@ -211,10 +185,10 @@ Each AI IDE has its own configuration file:
 | **Debug Issue** | debugger | systematic-debugging, code-review-checklist |
 | **Write Tests** | test-engineer | testing-patterns, tdd-workflow, webapp-testing |
 | **Secure App** | security-auditor | vulnerability-scanner, red-team-tactics |
-| **Deploy App** | devops-engineer | deployment-procedures, docker-expert |
+| **Deploy App** | backend-specialist | deploy workflow + security review |
 | **Plan Project** | project-planner | brainstorming, plan-writing, architecture |
-| **Mobile App** | mobile-developer | mobile-design |
-| **Game Dev** | game-developer | game-development |
+| **Frontend UI** | frontend-specialist | react-best-practices, ui-ux-pro-max |
+| **Security Review** | security-auditor | vulnerability-scanner, red-team-tactics |
 
 ---
 
@@ -231,5 +205,5 @@ Each AI IDE has its own configuration file:
 ## 🛠️ Version
 
 - **Skillforge**: v0.1.0
-- **Foundation**: antigravity-kit + ui-ux-pro-max concepts
+- **Shipped Template Set**: 7 agents, 22 skills, 8 workflows
 - **Last Updated**: 2026-03-19
