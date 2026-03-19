@@ -10,7 +10,8 @@ Skillforge is a modular system consisting of:
 
 - **7 Specialist Agents** — Role-based AI personas
 - **22 Skills** — Domain-specific knowledge modules
-- **10 Workflows** — Slash command procedures
+- **16 Workflows** — Slash command procedures
+- **5 Document Templates** — Spec, plan, tasks, checklist, constitution starters
 - **Multi-IDE Support** — Claude, Cursor, Windsurf, Antigravity, GitHub Copilot, Kiro, Codex
 
 ---
@@ -23,7 +24,8 @@ Skillforge is a modular system consisting of:
 ├── mcp_config.json          # MCP server configurations
 ├── agents/                  # Specialist Agents (7)
 ├── skills/                  # Domain Skills (22)
-├── workflows/               # Slash Commands (10)
+├── workflows/               # Slash Commands (16)
+├── templates/               # Document Templates (5)
 ├── rules/                   # Global Rules
 └── scripts/                 # Validation Scripts
 ```
@@ -112,14 +114,34 @@ Slash command procedures for common development tasks.
 |---------|-------------|---|
 | `/brainstorm` | Explore options before implementation | project-planner |
 | `/prd` | Draft or update a Product Requirements Document | project-planner, backend-specialist |
+| `/specify` | Create a structured feature spec with user stories | project-planner |
+| `/clarify` | Reduce ambiguity in a spec with targeted questions | project-planner |
 | `/doc` | Create or update project documentation | project-planner, backend-specialist |
-| `/create` | Create new features or apps | frontend-specialist, backend-specialist |
-| `/debug` | Systematic debugging and root cause analysis | debugger |
-| `/deploy` | Deploy application to production | backend-specialist, security-auditor |
-| `/enhance` | Improve existing code | frontend-specialist, backend-specialist, debugger |
 | `/plan` | Create task breakdown and planning | project-planner |
+| `/tasks` | Generate dependency-ordered task list from spec+plan | project-planner |
+| `/analyze` | Cross-artifact consistency and quality audit | project-planner |
+| `/checklist` | Generate quality checklist for requirements | project-planner |
+| `/create` | Create new features or apps | frontend-specialist, backend-specialist |
+| `/implement` | Execute an implementation plan phase by phase | frontend-specialist, backend-specialist |
+| `/enhance` | Improve existing code | frontend-specialist, backend-specialist, debugger |
+| `/debug` | Systematic debugging and root cause analysis | debugger |
 | `/test` | Generate and run tests | test-engineer |
+| `/deploy` | Deploy application to production | backend-specialist, security-auditor |
 | `/ui-ux-pro-max` | Design with 50+ styles and patterns | frontend-specialist |
+
+---
+
+## 📄 Templates (5)
+
+Document starters for structured feature development. Use these with `/specify`, `/plan`, `/tasks`, `/checklist`, and `/constitution` workflows.
+
+| Template | Use With | Description |
+|----------|----------|-------------|
+| `spec-template.md` | `/specify` | Feature spec with user stories and acceptance criteria |
+| `plan-template.md` | `/plan` | Technical plan with architecture, data model, API contracts |
+| `tasks-template.md` | `/tasks` | Phased, dependency-ordered task list |
+| `checklist-template.md` | `/checklist` | Requirements quality checklist (20 items) |
+| `constitution-template.md` | `/constitution` | Project principles and governance rules |
 
 ---
 
@@ -199,7 +221,7 @@ Each AI IDE has its own configuration file:
 1. **Start Here** — Read this file (ARCHITECTURE.md)
 2. **Browse Agents** → See `agents/` folder for specialist profiles
 3. **Explore Skills** → See `skills/` folder for domain knowledge
-4. **Try Workflows** → Use `/prd`, `/doc`, `/plan`, `/debug`, `/brainstorm` in your IDE
+4. **Try Workflows** → Use `/brainstorm`, `/specify`, `/plan`, `/tasks`, `/implement`, `/debug` in your IDE
 5. **Customize** → Add your own agents, skills, or workflows following the patterns
 
 ---
@@ -207,5 +229,5 @@ Each AI IDE has its own configuration file:
 ## 🛠️ Version
 
 - **Skillforge**: v0.1.0
-- **Shipped Template Set**: 7 agents, 22 skills, 10 workflows
+- **Shipped Template Set**: 7 agents, 22 skills, 16 workflows, 5 templates
 - **Last Updated**: 2026-03-19
