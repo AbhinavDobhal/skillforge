@@ -10,7 +10,7 @@ Skillforge is a modular system consisting of:
 
 - **7 Specialist Agents** — Role-based AI personas
 - **22 Skills** — Domain-specific knowledge modules
-- **8 Workflows** — Slash command procedures
+- **10 Workflows** — Slash command procedures
 - **Multi-IDE Support** — Claude, Cursor, Windsurf, Antigravity, GitHub Copilot, Kiro, Codex
 
 ---
@@ -23,7 +23,7 @@ Skillforge is a modular system consisting of:
 ├── mcp_config.json          # MCP server configurations
 ├── agents/                  # Specialist Agents (7)
 ├── skills/                  # Domain Skills (22)
-├── workflows/               # Slash Commands (8)
+├── workflows/               # Slash Commands (10)
 ├── rules/                   # Global Rules
 └── scripts/                 # Validation Scripts
 ```
@@ -104,13 +104,15 @@ skill-name/
 
 ---
 
-## 🔄 Workflows (8)
+## 🔄 Workflows (10)
 
 Slash command procedures for common development tasks.
 
 | Command | Description | Primary Agents |
 |---------|-------------|---|
 | `/brainstorm` | Explore options before implementation | project-planner |
+| `/prd` | Draft or update a Product Requirements Document | project-planner, backend-specialist |
+| `/doc` | Create or update project documentation | project-planner, backend-specialist |
 | `/create` | Create new features or apps | frontend-specialist, backend-specialist |
 | `/debug` | Systematic debugging and root cause analysis | debugger |
 | `/deploy` | Deploy application to production | backend-specialist, security-auditor |
@@ -197,7 +199,7 @@ Each AI IDE has its own configuration file:
 1. **Start Here** — Read this file (ARCHITECTURE.md)
 2. **Browse Agents** → See `agents/` folder for specialist profiles
 3. **Explore Skills** → See `skills/` folder for domain knowledge
-4. **Try Workflows** → Use `/plan`, `/debug`, `/brainstorm` in your IDE
+4. **Try Workflows** → Use `/prd`, `/doc`, `/plan`, `/debug`, `/brainstorm` in your IDE
 5. **Customize** → Add your own agents, skills, or workflows following the patterns
 
 ---
@@ -205,5 +207,5 @@ Each AI IDE has its own configuration file:
 ## 🛠️ Version
 
 - **Skillforge**: v0.1.0
-- **Shipped Template Set**: 7 agents, 22 skills, 8 workflows
+- **Shipped Template Set**: 7 agents, 22 skills, 10 workflows
 - **Last Updated**: 2026-03-19
