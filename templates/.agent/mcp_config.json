@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "skillforge": {
+      "description": "Skillforge agents, skills, and workflows integration",
+      "enabled": true
+    }
+  },
+  "agents": {
+    "path": "agents",
+    "autoInvoke": true
+  },
+  "skills": {
+    "path": "skills",
+    "progressiveDisclosure": true
+  },
+  "workflows": {
+    "path": "workflows",
+    "slashCommands": true
+  }
+}

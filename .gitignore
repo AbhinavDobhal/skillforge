@@ -1,0 +1,27 @@
+node_modules/
+dist/
+build/
+*.log
+.DS_Store
+.env
+.env.local
+.env.*.local
+coverage/
+.nyc_output/
+.cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Package lock files (optional per project preference)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
