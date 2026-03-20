@@ -4,13 +4,13 @@
   "description": "AI toolkit scaffolder for agents, skills, and workflows across Claude, Cursor, Windsurf, Antigravity, Copilot, Kiro, and Codex",
   "license": "MIT",
   "author": "Abhinav Dobhal",
-  "homepage": "https://github.com/alvinabhinav/aiskillforge",
+  "homepage": "https://github.com/AbhinavDobhal/aiskillforge",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alvinabhinav/aiskillforge.git"
+    "url": "git+https://github.com/AbhinavDobhal/aiskillforge.git"
   },
   "bugs": {
-    "url": "https://github.com/alvinabhinav/aiskillforge/issues"
+    "url": "https://github.com/AbhinavDobhal/aiskillforge/issues"
   },
   "keywords": [
     "ai",
