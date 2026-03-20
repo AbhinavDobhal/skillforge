@@ -6,11 +6,11 @@ description: Break a feature plan into actionable, dependency-ordered tasks
 
 ## Overview
 
-Generate an ordered, actionable task list from a feature spec and plan. Tasks are grouped by user story so each story can be implemented and tested independently. Run this after `/plan`.
+Generate an ordered, actionable task list from a feature spec and plan. Tasks are grouped by user story so each story can be implemented and tested independently. Run this after `/project-plan`.
 
 ## When to Use
 
-- After completing `/plan` for a feature
+- After completing `/project-plan` for a feature
 - When you need granular, executable work items
 - Before `/implement` to know what to build step by step
 - For estimating effort or assigning work

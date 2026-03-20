@@ -10,7 +10,7 @@ Aiskillforge is a modular system consisting of:
 
 - **7 Specialist Agents** — Role-based AI personas
 - **22 Skills** — Domain-specific knowledge modules
-- **16 Workflows** — Slash command procedures
+- **17 Workflows** — Slash command procedures
 - **5 Document Templates** — Spec, plan, tasks, checklist, constitution starters
 - **Multi-IDE Support** — Claude, Cursor, Windsurf, Antigravity, GitHub Copilot, Kiro, Codex
 
@@ -24,7 +24,7 @@ Aiskillforge is a modular system consisting of:
 ├── mcp_config.json          # MCP server configurations
 ├── agents/                  # Specialist Agents (7)
 ├── skills/                  # Domain Skills (22)
-├── workflows/               # Slash Commands (16)
+├── workflows/               # Slash Commands (17)
 ├── templates/               # Document Templates (5)
 ├── rules/                   # Global Rules
 └── scripts/                 # Validation Scripts
@@ -106,7 +106,7 @@ skill-name/
 
 ---
 
-## 🔄 Workflows (10)
+## 🔄 Workflows (17)
 
 Slash command procedures for common development tasks.
 
@@ -117,7 +117,7 @@ Slash command procedures for common development tasks.
 | `/specify` | Create a structured feature spec with user stories | project-planner |
 | `/clarify` | Reduce ambiguity in a spec with targeted questions | project-planner |
 | `/doc` | Create or update project documentation | project-planner, backend-specialist |
-| `/plan` | Create task breakdown and planning | project-planner |
+| `/project-plan` | Create task breakdown and planning | project-planner |
 | `/tasks` | Generate dependency-ordered task list from spec+plan | project-planner |
 | `/analyze` | Cross-artifact consistency and quality audit | project-planner |
 | `/checklist` | Generate quality checklist for requirements | project-planner |
@@ -127,18 +127,19 @@ Slash command procedures for common development tasks.
 | `/debug` | Systematic debugging and root cause analysis | debugger |
 | `/test` | Generate and run tests | test-engineer |
 | `/deploy` | Deploy application to production | backend-specialist, security-auditor |
+| `/pullrequest` | Assess PR risk, assign reviewers, and approve by policy | security-auditor, project-planner |
 | `/ui-ux-pro-max` | Design with 50+ styles and patterns | frontend-specialist |
 
 ---
 
 ## 📄 Templates (5)
 
-Document starters for structured feature development. Use these with `/specify`, `/plan`, `/tasks`, `/checklist`, and `/constitution` workflows.
+Document starters for structured feature development. Use these with `/specify`, `/project-plan`, `/tasks`, `/checklist`, and `/constitution` workflows.
 
 | Template | Use With | Description |
 |----------|----------|-------------|
 | `spec-template.md` | `/specify` | Feature spec with user stories and acceptance criteria |
-| `plan-template.md` | `/plan` | Technical plan with architecture, data model, API contracts |
+| `plan-template.md` | `/project-plan` | Technical plan with architecture, data model, API contracts |
 | `tasks-template.md` | `/tasks` | Phased, dependency-ordered task list |
 | `checklist-template.md` | `/checklist` | Requirements quality checklist (20 items) |
 | `constitution-template.md` | `/constitution` | Project principles and governance rules |
@@ -221,7 +222,7 @@ Each AI IDE has its own configuration file:
 1. **Start Here** — Read this file (ARCHITECTURE.md)
 2. **Browse Agents** → See `agents/` folder for specialist profiles
 3. **Explore Skills** → See `skills/` folder for domain knowledge
-4. **Try Workflows** → Use `/brainstorm`, `/specify`, `/plan`, `/tasks`, `/implement`, `/debug` in your IDE
+4. **Try Workflows** → Use `/brainstorm`, `/specify`, `/project-plan`, `/tasks`, `/implement`, `/debug` in your IDE
 5. **Customize** → Add your own agents, skills, or workflows following the patterns
 
 ---
@@ -229,5 +230,5 @@ Each AI IDE has its own configuration file:
 ## 🛠️ Version
 
 - **Aiskillforge**: v0.1.0
-- **Shipped Template Set**: 7 agents, 22 skills, 16 workflows, 5 templates
+- **Shipped Template Set**: 7 agents, 22 skills, 17 workflows, 5 templates
 - **Last Updated**: 2026-03-19

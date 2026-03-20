@@ -6,7 +6,7 @@ description: Create or update a feature specification from a natural language de
 
 ## Overview
 
-Turn a plain-language feature description into a structured specification with user stories, acceptance criteria, requirements, and edge cases. Run this before `/clarify`, `/plan`, or `/tasks`.
+Turn a plain-language feature description into a structured specification with user stories, acceptance criteria, requirements, and edge cases. Run this before `/clarify`, `/project-plan`, or `/tasks`.
 
 ## When to Use
 
@@ -87,7 +87,7 @@ Produce a spec document in this format (save as `specs/<feature-name>/spec.md`):
 After writing the spec:
 1. Summarize the feature in 2–3 sentences
 2. List the user stories by priority
-3. Suggest next step: `/clarify` to reduce ambiguity, or `/plan` to create the technical plan
+3. Suggest next step: `/clarify` to reduce ambiguity, or `/project-plan` to create the technical plan
 
 ## Tips
 

@@ -115,7 +115,7 @@ Slash command procedures for common development tasks.
 | `/debug` | Systematic debugging and root cause analysis | debugger |
 | `/deploy` | Deploy application to production | backend-specialist, security-auditor |
 | `/enhance` | Improve existing code | frontend-specialist, backend-specialist, debugger |
-| `/plan` | Create task breakdown and planning | project-planner |
+| `/project-plan` | Create task breakdown and planning | project-planner |
 | `/test` | Generate and run tests | test-engineer |
 | `/ui-ux-pro-max` | Design with 50+ styles and patterns | frontend-specialist |
 
@@ -197,7 +197,7 @@ Each AI IDE has its own configuration file:
 1. **Start Here** — Read this file (ARCHITECTURE.md)
 2. **Browse Agents** → See `agents/` folder for specialist profiles
 3. **Explore Skills** → See `skills/` folder for domain knowledge
-4. **Try Workflows** → Use `/plan`, `/debug`, `/brainstorm` in your IDE
+4. **Try Workflows** → Use `/project-plan`, `/debug`, `/brainstorm` in your IDE
 5. **Customize** → Add your own agents, skills, or workflows following the patterns
 
 ---

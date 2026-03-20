@@ -6,7 +6,7 @@ description: Identify and resolve ambiguity in a feature spec before planning or
 
 ## Overview
 
-Surface underspecified areas in the active feature specification by asking up to 5 targeted questions, then encode the answers directly back into the spec. Run this after `/specify` and before `/plan`.
+Surface underspecified areas in the active feature specification by asking up to 5 targeted questions, then encode the answers directly back into the spec. Run this after `/specify` and before `/project-plan`.
 
 ## When to Use
 
@@ -69,7 +69,7 @@ After the user responds:
 
 ### Step 5: Report Changes
 
-List every section updated and why. Then suggest: `/plan` to build the technical plan.
+List every section updated and why. Then suggest: `/project-plan` to build the technical plan.
 
 ## Example Questions
 

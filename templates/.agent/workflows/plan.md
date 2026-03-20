@@ -2,7 +2,7 @@
 description: Create task breakdown and timeline planning
 ---
 
-# /plan - Project Planning & Task Breakdown
+# /project-plan - Project Planning & Task Breakdown
 
 ## Overview
 

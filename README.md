@@ -50,7 +50,7 @@ aiskillforge init --ai claude
 	- `/specify` to write a structured feature spec with user stories
 	- `/clarify` to reduce ambiguity in a spec before planning
 	- `/doc` to create or update project documentation
-	- `/plan` for task breakdown and technical planning
+	- `/project-plan` for task breakdown and technical planning
 	- `/tasks` to generate a dependency-ordered task list
 	- `/analyze` to audit consistency across spec, plan, and tasks
 	- `/checklist` to validate requirement quality
@@ -60,6 +60,7 @@ aiskillforge init --ai claude
 	- `/debug` for root-cause troubleshooting
 	- `/test` to generate and run tests
 	- `/deploy` to ship to production
+	- `/pullrequest` to assess PR risk, reviewers, and approval
 	- `/ui-ux-pro-max` for design-first features
 
 ### Example First Session
@@ -70,7 +71,7 @@ aiskillforge init --ai claude
 /specify Write feature spec for user registration and login
 /clarify Clarify the registration spec requirements
 /doc Update README with auth setup and API examples
-/plan Build user authentication with email + password
+/project-plan Build user authentication with email + password
 /tasks Generate task list for the auth feature
 /analyze Check spec, plan, and tasks for consistency
 /checklist Validate auth feature spec quality
@@ -80,6 +81,7 @@ aiskillforge init --ai claude
 /test auth service and API handlers
 /debug login returns 401 on valid credentials
 /deploy ship auth module to staging
+/pullrequest evaluate PR #42 for risk and reviewer assignment
 ```
 
 The command creates:
@@ -91,7 +93,7 @@ The command creates:
 - `.agent/rules/`
 - `.agent/mcp_config.json`
 - IDE-specific configuration files based on `--ai`
-- Workflow commands include `/brainstorm`, `/prd`, `/specify`, `/clarify`, `/doc`, `/plan`, `/tasks`, `/analyze`, `/checklist`, `/enhance`, `/create`, `/implement`, `/debug`, `/test`, `/deploy`, `/ui-ux-pro-max`
+- Workflow commands include `/brainstorm`, `/prd`, `/specify`, `/clarify`, `/doc`, `/project-plan`, `/tasks`, `/analyze`, `/checklist`, `/enhance`, `/create`, `/implement`, `/debug`, `/test`, `/deploy`, `/pullrequest`, `/ui-ux-pro-max`
 
 ## Supported IDEs
 
