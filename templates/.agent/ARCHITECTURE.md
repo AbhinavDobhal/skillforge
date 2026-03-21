@@ -19,7 +19,7 @@ Aiskillforge is a modular system consisting of:
 ## 🏗️ Directory Structure
 
 ```plaintext
-.agent/
+.aiskillforge/
 ├── ARCHITECTURE.md          # This file
 ├── mcp_config.json          # MCP server configurations
 ├── agents/                  # Specialist Agents (7)
@@ -197,7 +197,7 @@ Each AI IDE has its own configuration file:
 - **GitHub Copilot** → `.github/copilot-instructions.md`
 - **Kiro** → `kiro.config.json`
 - **Codex** → `codex.config.md`
-- **Antigravity** → Updated `.agent/mcp_config.json`
+- **Antigravity** → Updated `.aiskillforge/mcp_config.json`
 
 ---
 

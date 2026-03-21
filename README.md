@@ -40,7 +40,7 @@ aiskillforge init --ai claude
 ```
 
 3. Open the same project in your IDE.
-4. Check the generated `.agent/` folder:
+4. Check the generated `.aiskillforge/` folder (placed inside the IDE's config folder — e.g. `.github/.aiskillforge/` for Copilot, `.cursor/.aiskillforge/` for Cursor):
 	- `agents/` for specialist personas
 	- `skills/` for domain knowledge modules
 	- `workflows/` for slash-command playbooks
@@ -86,14 +86,24 @@ aiskillforge init --ai claude
 
 The command creates:
 
-- `.agent/agents/`
-- `.agent/skills/`
-- `.agent/workflows/`
-- `.agent/templates/`
-- `.agent/rules/`
-- `.agent/mcp_config.json`
+- `<ide-folder>/.aiskillforge/agents/`
+- `<ide-folder>/.aiskillforge/skills/`
+- `<ide-folder>/.aiskillforge/workflows/`
+- `<ide-folder>/.aiskillforge/templates/`
+- `<ide-folder>/.aiskillforge/rules/`
+- `<ide-folder>/.aiskillforge/mcp_config.json`
 - IDE-specific configuration files based on `--ai`
 - Workflow commands include `/brainstorm`, `/prd`, `/specify`, `/clarify`, `/doc`, `/project-plan`, `/tasks`, `/analyze`, `/checklist`, `/enhance`, `/create`, `/implement`, `/debug`, `/test`, `/full`, `/pullrequest`, `/ui-ux-pro-max`
+
+**Folder placement by IDE:**
+
+| IDE | Folder |
+|-----|--------|
+| GitHub Copilot | `.github/.aiskillforge/` |
+| Cursor | `.cursor/.aiskillforge/` |
+| Windsurf | `.windsurf/.aiskillforge/` |
+| Claude | `.claude/.aiskillforge/` |
+| Kiro, Codex, Antigravity | `.aiskillforge/` |
 
 ## Supported IDEs
 
