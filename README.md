@@ -115,7 +115,19 @@ The command creates:
 
 - Creates a consistent AI workflow across teams and IDEs
 - Reduces prompt drift by using reusable agents, skills, and slash-command workflows
-- Speeds up feature delivery with a spec -> clarify -> plan -> tasks -> implement flow
+- Speeds up feature delivery with a structured flow — from idea to running code:
+  1. `/specify` — write a structured feature spec with user stories and acceptance criteria
+     > *Example: "Specify user registration with email and password"*
+  2. `/clarify` — resolve ambiguities in the spec before any planning or code starts
+     > *Example: "Clarify the registration spec — what happens on duplicate email?"*
+  3. `/project-plan` — break the feature into phases, milestones, and technical decisions
+     > *Example: "Project-plan the auth module with JWT and refresh tokens"*
+  4. `/tasks` — generate a dependency-ordered, assignable task list from the plan
+     > *Example: "Generate tasks for the auth feature plan"*
+  5. `/implement` — execute each plan phase step by step, with code and validation
+     > *Example: "Implement phase 1 of the auth plan"*
+
+  Run `/full` to execute this entire flow in one command and generate all project artifacts automatically.
 - Improves quality with built-in debugging, testing, review, and checklist workflows
 - Works as project scaffolding so every new repo starts with the same AI operating model
 
