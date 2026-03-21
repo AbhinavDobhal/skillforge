@@ -10,7 +10,7 @@ Aiskillforge is a modular system consisting of:
 
 - **7 Specialist Agents** — Role-based AI personas
 - **22 Skills** — Domain-specific knowledge modules
-- **16 Workflows** — Slash command procedures
+- **17 Workflows** — Slash command procedures
 - **5 Document Templates** — Spec, plan, tasks, checklist, constitution starters
 - **Multi-IDE Support** — Claude, Cursor, Windsurf, Antigravity, GitHub Copilot, Kiro, Codex
 
@@ -24,7 +24,7 @@ Aiskillforge is a modular system consisting of:
 ├── mcp_config.json          # MCP server configurations
 ├── agents/                  # Specialist Agents (7)
 ├── skills/                  # Domain Skills (22)
-├── workflows/               # Slash Commands (16)
+├── workflows/               # Slash Commands (17)
 ├── templates/               # Document Templates (5)
 ├── rules/                   # Global Rules
 └── scripts/                 # Validation Scripts
@@ -106,7 +106,7 @@ skill-name/
 
 ---
 
-## 🔄 Workflows (16)
+## 🔄 Workflows (17)
 
 Slash command procedures for common development tasks.
 
@@ -126,6 +126,7 @@ Slash command procedures for common development tasks.
 | `/enhance` | Improve existing code | frontend-specialist, backend-specialist, debugger |
 | `/debug` | Systematic debugging and root cause analysis | debugger |
 | `/test` | Generate and run tests | test-engineer |
+| `/full` | Run complete discovery, planning, and artifact generation flow | project-planner, backend-specialist |
 | `/pullrequest` | Assess PR risk, assign reviewers, and approve by policy | security-auditor, project-planner |
 | `/ui-ux-pro-max` | Design with 50+ styles and patterns | frontend-specialist |
 
@@ -220,7 +221,7 @@ Each AI IDE has its own configuration file:
 1. **Start Here** — Read this file (ARCHITECTURE.md)
 2. **Browse Agents** → See `agents/` folder for specialist profiles
 3. **Explore Skills** → See `skills/` folder for domain knowledge
-4. **Try Workflows** → Use `/brainstorm`, `/specify`, `/project-plan`, `/tasks`, `/implement`, `/debug` in your IDE
+4. **Try Workflows** → Use `/brainstorm`, `/full`, `/specify`, `/project-plan`, `/tasks`, `/implement`, `/debug` in your IDE
 5. **Customize** → Add your own agents, skills, or workflows following the patterns
 
 ---
@@ -228,5 +229,5 @@ Each AI IDE has its own configuration file:
 ## 🛠️ Version
 
 - **Aiskillforge**: v0.1.0
-- **Shipped Template Set**: 7 agents, 22 skills, 16 workflows, 5 templates
+- **Shipped Template Set**: 7 agents, 22 skills, 17 workflows, 5 templates
 - **Last Updated**: 2026-03-19

@@ -10,7 +10,7 @@ Aiskillforge is a modular system consisting of:
 
 - **7 Specialist Agents** — Role-based AI personas
 - **22 Skills** — Domain-specific knowledge modules
-- **7 Workflows** — Slash command procedures
+- **8 Workflows** — Slash command procedures
 - **Multi-IDE Support** — Claude, Cursor, Windsurf, Antigravity, GitHub Copilot, Kiro, Codex
 
 ---
@@ -23,7 +23,7 @@ Aiskillforge is a modular system consisting of:
 ├── mcp_config.json          # MCP server configurations
 ├── agents/                  # Specialist Agents (7)
 ├── skills/                  # Domain Skills (22)
-├── workflows/               # Slash Commands (7)
+├── workflows/               # Slash Commands (8)
 ├── rules/                   # Global Rules
 └── scripts/                 # Validation Scripts
 ```
@@ -104,7 +104,7 @@ skill-name/
 
 ---
 
-## 🔄 Workflows (7)
+## 🔄 Workflows (8)
 
 Slash command procedures for common development tasks.
 
@@ -116,6 +116,7 @@ Slash command procedures for common development tasks.
 | `/enhance` | Improve existing code | frontend-specialist, backend-specialist, debugger |
 | `/project-plan` | Create task breakdown and planning | project-planner |
 | `/test` | Generate and run tests | test-engineer |
+| `/full` | Run complete discovery, planning, and artifact generation flow | project-planner, backend-specialist |
 | `/ui-ux-pro-max` | Design with 50+ styles and patterns | frontend-specialist |
 
 ---
@@ -184,7 +185,6 @@ Each AI IDE has its own configuration file:
 | **Debug Issue** | debugger | systematic-debugging, code-review-checklist |
 | **Write Tests** | test-engineer | testing-patterns, tdd-workflow, webapp-testing |
 | **Secure App** | security-auditor | vulnerability-scanner, red-team-tactics |
-| **Deploy App** | backend-specialist | deploy workflow + security review |
 | **Plan Project** | project-planner | brainstorming, plan-writing, architecture |
 | **Frontend UI** | frontend-specialist | react-best-practices, ui-ux-pro-max |
 | **Security Review** | security-auditor | vulnerability-scanner, red-team-tactics |
@@ -196,7 +196,7 @@ Each AI IDE has its own configuration file:
 1. **Start Here** — Read this file (ARCHITECTURE.md)
 2. **Browse Agents** → See `agents/` folder for specialist profiles
 3. **Explore Skills** → See `skills/` folder for domain knowledge
-4. **Try Workflows** → Use `/project-plan`, `/debug`, `/brainstorm` in your IDE
+4. **Try Workflows** → Use `/full`, `/project-plan`, `/debug`, `/brainstorm` in your IDE
 5. **Customize** → Add your own agents, skills, or workflows following the patterns
 
 ---
@@ -204,5 +204,5 @@ Each AI IDE has its own configuration file:
 ## 🛠️ Version
 
 - **Aiskillforge**: v0.1.0
-- **Shipped Template Set**: 7 agents, 22 skills, 7 workflows
+- **Shipped Template Set**: 7 agents, 22 skills, 8 workflows
 - **Last Updated**: 2026-03-19
