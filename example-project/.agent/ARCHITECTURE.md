@@ -10,7 +10,7 @@ Aiskillforge is a modular system consisting of:
 
 - **7 Specialist Agents** — Role-based AI personas
 - **22 Skills** — Domain-specific knowledge modules
-- **8 Workflows** — Slash command procedures
+- **7 Workflows** — Slash command procedures
 - **Multi-IDE Support** — Claude, Cursor, Windsurf, Antigravity, GitHub Copilot, Kiro, Codex
 
 ---
@@ -23,7 +23,7 @@ Aiskillforge is a modular system consisting of:
 ├── mcp_config.json          # MCP server configurations
 ├── agents/                  # Specialist Agents (7)
 ├── skills/                  # Domain Skills (22)
-├── workflows/               # Slash Commands (8)
+├── workflows/               # Slash Commands (7)
 ├── rules/                   # Global Rules
 └── scripts/                 # Validation Scripts
 ```
@@ -104,7 +104,7 @@ skill-name/
 
 ---
 
-## 🔄 Workflows (8)
+## 🔄 Workflows (7)
 
 Slash command procedures for common development tasks.
 
@@ -113,7 +113,6 @@ Slash command procedures for common development tasks.
 | `/brainstorm` | Explore options before implementation | project-planner |
 | `/create` | Create new features or apps | frontend-specialist, backend-specialist |
 | `/debug` | Systematic debugging and root cause analysis | debugger |
-| `/deploy` | Deploy application to production | backend-specialist, security-auditor |
 | `/enhance` | Improve existing code | frontend-specialist, backend-specialist, debugger |
 | `/project-plan` | Create task breakdown and planning | project-planner |
 | `/test` | Generate and run tests | test-engineer |
@@ -205,5 +204,5 @@ Each AI IDE has its own configuration file:
 ## 🛠️ Version
 
 - **Aiskillforge**: v0.1.0
-- **Shipped Template Set**: 7 agents, 22 skills, 8 workflows
+- **Shipped Template Set**: 7 agents, 22 skills, 7 workflows
 - **Last Updated**: 2026-03-19

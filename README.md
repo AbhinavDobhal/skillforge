@@ -59,7 +59,6 @@ aiskillforge init --ai claude
 	- `/implement` to execute a plan phase by phase
 	- `/debug` for root-cause troubleshooting
 	- `/test` to generate and run tests
-	- `/deploy` to ship to production
 	- `/pullrequest` to assess PR risk, reviewers, and approval
 	- `/ui-ux-pro-max` for design-first features
 
@@ -80,7 +79,6 @@ aiskillforge init --ai claude
 /implement Execute the auth implementation plan
 /test auth service and API handlers
 /debug login returns 401 on valid credentials
-/deploy ship auth module to staging
 /pullrequest evaluate PR #42 for risk and reviewer assignment
 ```
 
@@ -93,7 +91,7 @@ The command creates:
 - `.agent/rules/`
 - `.agent/mcp_config.json`
 - IDE-specific configuration files based on `--ai`
-- Workflow commands include `/brainstorm`, `/prd`, `/specify`, `/clarify`, `/doc`, `/project-plan`, `/tasks`, `/analyze`, `/checklist`, `/enhance`, `/create`, `/implement`, `/debug`, `/test`, `/deploy`, `/pullrequest`, `/ui-ux-pro-max`
+- Workflow commands include `/brainstorm`, `/prd`, `/specify`, `/clarify`, `/doc`, `/project-plan`, `/tasks`, `/analyze`, `/checklist`, `/enhance`, `/create`, `/implement`, `/debug`, `/test`, `/pullrequest`, `/ui-ux-pro-max`
 
 ## Supported IDEs
 
